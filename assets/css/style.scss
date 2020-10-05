@@ -1,0 +1,456 @@
+/*
+@File: My cook book Template Styles
+
+* This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+
+This files table contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+** - Default CSS
+** - Navbar Area CSS
+** - Font awesome icons CSS
+** - Navbar CSS
+** - Banner CSS
+** - Home Banner CSS
+** - Zoom effect CSS
+** - Blog CSS
+** - Subscription box CSS CSS
+** - Tag box CSS
+** - Pagination area CSS
+** - Author box CSS
+** - Recipe card CSS
+** - Footer CSS
+
+
+*/
+
+
+/*================================================
+Default CSS
+=================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+$font-family1: 'Fira Sans', sans-serif;
+$font-family2: 'Open Sans', sans-serif;
+$main-color: #E87D8A;
+$light-color:#FFF0F2 ;
+$dark-color: #C23B46;
+$black-color: #080a3c;
+$white-color: #ffffff;
+$paragraph-color: #4a6f8a;
+$font-size: 16px;
+$transition: .5s;
+
+body {
+    color: $black-color;
+    background-color: $white-color;
+    padding: 0;
+    margin: 0;
+    font: {
+        size: $font-size;
+        family: $font-family2;
+    };
+}
+
+
+a {
+  -webkit-transition: $transition;
+  transition: $transition;
+  color:black;
+  text-decoration: none;
+  outline: 0 !important;
+
+}
+a:hover {
+  text-decoration: none;
+  color:$main-color;
+  
+}
+.btn:hover{
+  text-decoration: none;
+  color:$main-color;
+}
+.heading{
+  font-size: 4rem;
+  font-family: $font-family1;
+  text-shadow: 4px 4px 4px $main-color;
+}
+
+/*================================================
+Font awesome icons CSS
+=================================================*/
+.fa {
+padding: 10px;
+border-radius: 440px;
+font-size: 20px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+margin: 0.2rem;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+background: gray;
+color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+background: gray;
+color: white;
+}
+.fa-instagram {
+background: gray;
+color: white;
+}
+/*================================================
+Navbar CSS
+=================================================*/
+.nav-link{
+color: #000000;
+
+}
+.navbar-center{
+position: absolute;
+left: 50%;
+transform: translatex(-50%);
+
+}
+
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(194, 59, 70, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+border-color:black;
+background-color: $light-color;
+
+} 
+/*================================================
+Banner CSS
+=================================================*/
+.banner{
+
+background-image: url(/assets/images/pexels-buenosia-carol-1120246.jpg) ;
+height: 30rem;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.banner-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+/*================================================
+Home Banner CSS
+=================================================*/
+.home-banner {
+  background-image: url(/assets/images/pexels-buenosia-carol-1120246.jpg);
+  height: 50vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.home-banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+/*================================================
+Zoom effect CSS
+=================================================*/
+.home-heading{
+  margin-top: 2rem;
+}
+.zoom-text{
+
+display: block;
+position: absolute; 
+top: 70%; 
+left: 50%; 
+-webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%); 
+transform: translate(-50%,-50%);
+color: $dark-color;
+text-shadow: $dark-color;
+font-weight: 600;
+font-size: 3rem;
+text-shadow: 4px 4px 4px $main-color;
+}
+.zoom {
+  padding:1rem;
+  transition: transform .2s; /* Animation */
+  margin: 2rem;
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom)*/
+}
+
+/*================================================
+blog CSS
+=================================================*/
+/* button */
+.my-btn{
+background-color: $main-color;
+border-radius: 25px;
+border-color:$dark-color ;
+}
+.my-btn:hover{
+background-color: $dark-color;
+
+}
+.my-btn2{
+background-color:$main-color;
+border-color:$dark-color ;
+}
+.my-btn2:hover{
+background-color: $dark-color;
+
+}
+/* tags  */
+.tag1{
+font-size: 0.7rem;
+margin: 0 1rem 1rem 1rem;
+border: solid 0.01rem;
+}
+.blog-section-heading{
+padding: 2rem 1rem 1rem 1rem;
+font-weight: 700;
+}
+/* blogs */
+.my-card{
+  padding:2rem 1rem 1rem 1rem;
+}
+
+.card-img{
+  padding: 2rem 1rem 1rem 1rem ;
+}
+
+/* blog card image*/
+.card-img-top {
+width: 100%;
+height: 10rem;
+object-fit: cover;
+}
+/*================================================
+Subscription box CSS
+=================================================*/
+.my-subscription-box{
+padding: 2rem 1rem 2rem 1rem;
+}
+.content{
+padding:  2rem ;
+
+  border: dashed $main-color 0.1rem;
+  height: auto;
+}
+/*================================================
+Tag box CSS
+=================================================*/
+
+.tag{
+padding: 0.3rem 0.2rem 0.3rem 0.2rem;
+margin-inline-start: 2rem;
+margin-bottom: 0.5rem;
+font-size: 0.8rem;
+
+border: solid $main-color 0.1rem;
+}
+/*================================================
+Pagination area CSS
+=================================================*/
+.pagination li a{
+color:black;
+}
+/*================================================
+Author box CSS
+=================================================*/
+.author-box{
+padding: 1rem 1rem 1rem 1rem;
+margin:2rem ;
+border: solid $main-color 0.1rem;
+}
+/*================================================
+Recipe card CSS
+=================================================*/
+.recipe-card {
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+  box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+  border:1px solid #f0f1f3;
+
+  margin: 50px auto;
+}
+.recipe-card__body {    
+    padding: 20px;
+}
+.recipe-card__heading {
+  padding: 0;
+  margin: 0 0 0;
+  color: #444;
+}
+.recipe-card__subhead {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+.recipe-card__ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  column-count: 1;
+  li {
+    margin-bottom: 5px;
+  }
+  li:before {
+    content: '\2022';
+    color: $dark-color;
+    margin-right: 5px;
+  }
+}
+
+.recipe-card__nav {
+  margin: 0 0 20px;
+  padding: 0;
+  border-bottom: 1px solid $dark-color;
+  li {
+    display: inline-block;
+    margin-right: 30px
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  h3:after {
+    content: '';
+    display: block;
+    width: 0%;
+    padding-top: 10px;
+    margin: 0 auto;
+    border-bottom: 5px solid $main-color;
+    transition: width 250ms ease-in-out 0s;
+  }
+  h3:hover {
+    cursor: pointer;
+  }
+  h3:hover:after, h3.active:after {
+   width: 100%; 
+  }
+}
+
+@media (min-width:599px) {
+  .recipe-card {
+   
+    padding:2rem;
+    margin: 0.6rem;
+  }
+  .recipe-card__ingredients {
+    column-count: 2
+  }
+}
+
+/*================================================
+Footer CSS
+=================================================*/
+.footer{
+background-color:$light-color ;
+margin-top: 2rem;
+
+}
+.footer-flex{
+display: flex;
+}
+.footer-box{
+padding: 2rem;
+font-size: 0.9rem;
+}
+
+.copyright{
+background-color:$main-color;
+padding: 1rem ;
+margin-top: 1rem;
+}
+/*================================================
+Contact box CSS
+=================================================*/
+.contact-box{
+  margin: 2rem;
+}
+textarea {
+resize: none;
+}
+.form-label {
+
+  display: none;
+  /* font-size: 12px;
+color: #C23B46;
+margin: 0;
+display: block;
+opacity: 1;
+-webkit-transition: .333s ease top, .333s ease opacity;
+transition: .333s ease top, .333s ease opacity; */
+}
+.form-control {
+border-radius: 0;
+border-color: #ccc;
+   border-width: 0 0 2px 0;
+   border-style: none none solid none;
+   box-shadow: none;
+}
+.form-control:focus {
+box-shadow: none;
+border-color: #C23B46;
+}
+.js-hide-label {
+opacity: 0; 	
+}
+.js-unhighlight-label {
+color: #999 
+}
+.btn-start-order {
+background: 0 0 #ffffff;
+  border: 1px solid $dark-color;
+  border-radius: 3px;
+  color: #2f323a;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: inherit;
+  margin: 2rem 0;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  transition: all 0.25s ease 0s;
+}
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+border-color:#C23B46;
+color: $main-color;
+}

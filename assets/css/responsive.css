@@ -1,0 +1,108 @@
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  html, body {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+  h3 h4 {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .banner {
+    height: 28rem;
+  }
+
+  .tag {
+    font-size: 8px;
+    margin-inline-start: 10px;
+  }
+
+  .footer-flex {
+    font-size: 10px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .banner {
+    height: 30rem;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .banner {
+    height: 30rem;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .heading {
+    font-size: 4rem;
+  }
+
+  .banner {
+    height: 24rem;
+  }
+}
+/* Min width 1200px to Max width 1300px */
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .heading {
+    font-size: 4rem;
+  }
+
+  .banner {
+    height: 30rem;
+  }
+}
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {
+  .heading {
+    font-size: 4rem;
+  }
+
+  .banner {
+    height: 20rem;
+  }
+}
+/* Min width 1800px */
+@media only screen and (min-width: 1800px) {
+  .heading {
+    font-size: 4rem;
+  }
+
+  .banner {
+    height: 30rem;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
