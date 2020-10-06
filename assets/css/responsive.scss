@@ -18,6 +18,9 @@ $value_nine: 1550px;
 html,body{
     font-size: 12px;
 }
+    .zoom-text{
+    font-size: 20px;
+    }
 h2{
     font-size: 16px;
 }
@@ -28,10 +31,7 @@ h3{
     }
 }
 
-   
-    p{
-    font-size: 0.9rem;
-    }
+
     a{
     font-size: 0.9rem;
     }
@@ -53,6 +53,21 @@ h3{
       .content{
           font-size: 12px;
       }
+      .footer-flex{
+        display: flex;
+        padding: 5px;
+        margin: 3px;
+        }
+        .fa {
+            padding: 5px;
+            border-radius: 440px;
+            font-size: 10px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 0.2rem;
+            }
+
 }
 /* Min width 576px to Max width 767px */
 @media only #{$media} and ($feature_min : $value_one) and ($feature_max : $value_two) {
@@ -63,6 +78,8 @@ h3{
       .banner{
         height: 30rem;
     }
+
+
 }
 /* Min width 768px to Max width 991px */
 @media only #{$media} and ($feature_min : $value_three) and ($feature_max : $value_four) {
@@ -72,6 +89,9 @@ h3{
       }
       .banner{
         height: 30rem;
+    }
+  .zoom-text{
+    font-size: 30px;
     }
 }
 
@@ -83,7 +103,9 @@ h3{
       .banner{
         height: 24rem;
     }
-
+    .zoom-text{
+    font-size: 30px;
+    }
 }
 /* Min width 1200px to Max width 1300px */
 @media only #{$media} and ($feature_min : $value_seven) and ($feature_max : $value_eight) {
